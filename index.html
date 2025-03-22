@@ -101,7 +101,7 @@
       border-radius: 50%;
       width: 70px;
       height: 70px;
-      background-image: url('/mnt/data/football%20ball.png');
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Football_Pallo_valmiina-cropped.jpg/320px-Football_Pallo_valmiina-cropped.jpg');
       background-size: cover;
       background-position: center;
       cursor: pointer;
@@ -188,15 +188,32 @@
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-  </style>
+      .cta-image-button {
+      display: inline-block;
+    }
+
+    .cta-image-button .cta-ball {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      transition: transform 0.4s ease;
+    }
+
+    .cta-image-button .cta-ball:hover {
+      transform: translateX(30px) scale(1.1) rotate(360deg);
+    }
+
+</style>
 </head>
 <body>
 
   <header>
-    <img src="/mnt/data/football%20ball.png" alt="Football" class="football-icon">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Football_Pallo_valmiina-cropped.jpg/320px-Football_Pallo_valmiina-cropped.jpg" alt="Football" class="football-icon">
     <h1>Watch Football Legends Live – For a Cause</h1>
     <p>Join the waitlist for an unforgettable charity football match featuring world-famous players. Limited spots available!</p>
-    <a href="#waitlist"><button class="cta-button">Join the Waitlist</button></a>
+    <a href="#waitlist" class="cta-image-button">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Football_Pallo_valmiina-cropped.jpg/320px-Football_Pallo_valmiina-cropped.jpg" alt="Join the Waitlist" class="cta-ball">
+    </a>
   </header>
 
   <section class="section about">
