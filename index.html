@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Charity Football Match</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Oswald', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1518091043644-c1d4457512c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 4rem 2rem;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .football-icon {
+      width: 60px;
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+    }
+
+    .cta-button {
+      background-color: #ffd700;
+      color: #000;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 25px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+    }
+
+    .about {
+      text-align: center;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin: 0.5rem 0 0.2rem;
+      font-weight: bold;
+    }
+
+    input {
+      padding: 0.7rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button[type="submit"] {
+      margin-top: 1.5rem;
+      border: none;
+      border-radius: 50%;
+      width: 70px;
+      height: 70px;
+      background-image: url('/mnt/data/football%20ball.png');
+      background-size: cover;
+      background-position: center;
+      cursor: pointer;
+      position: relative;
+      z-index: 10;
+      transition: transform 0.6s ease, box-shadow 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      transform: translateX(100px) scale(1.15) rotate(360deg);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    }
+
+    .faq {
+      margin-top: 2rem;
+    }
+
+    .faq-item {
+      margin-bottom: 1rem;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 1rem;
+    }
+
+    .faq-item h4 {
+      margin-bottom: 0.5rem;
+    }
+
+    .social {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .social a {
+      margin: 0 0.5rem;
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: #333;
+    }
+
+    .players {
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .players img {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin: 0 12px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .players img:hover {
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
+      padding: 2rem 1rem;
+      border-top: 1px solid #eee;
+      background-color: #f1f1f1;
+    }
+
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 3rem;
+      }
+
+      .cta-button {
+        font-size: 1.2rem;
+      }
+    }
+
+    .google-form-embed {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="/mnt/data/football%20ball.png" alt="Football" class="football-icon">
+    <h1>Watch Football Legends Live – For a Cause</h1>
+    <p>Join the waitlist for an unforgettable charity football match featuring world-famous players. Limited spots available!</p>
+    <a href="#waitlist"><button class="cta-button">Join the Waitlist</button></a>
+  </header>
+
+  <section class="section about">
+    <h2>About Us</h2>
+    <p>We are a passionate group of football lovers, volunteers, and event organizers dedicated to using the beautiful game to create positive change. Our mission is to bring fans together with their football idols for unforgettable moments — while raising awareness and funds for meaningful causes. Whether you're here for the action, the stars, or the charity, you're part of something bigger. Let's make a difference, one match at a time.</p>
+  </section>
+
+  <section class="section about">
+    <h2>About the Event</h2>
+    <p>This charity match brings together iconic footballers to raise funds for a great cause. Enjoy legendary goals, epic moments, and support a meaningful mission. Don’t miss out!</p>
+  </section>
+
+  <section class="section form-container" id="waitlist">
+    <h2>Join the Waitlist</h2>
+    <div class="google-form-embed">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSetlW0-qMiFz_039AhGWe63iwFYoq_0aqwky3VUn3idktrjAA/viewform?embedded=true" width="640" height="821" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+  </section>
+
+  <section class="section faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+      <h4>When is the match?</h4>
+      <p>The official date will be announced soon. Join the waitlist to be the first to know!</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>How will I watch the event?</h4>
+      <p>You’ll receive an email with streaming details before the match.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Is the event free?</h4>
+      <p>Yes, it's free to watch! Optional donations will go toward our supported charities.</p>
+    </div>
+
+    <div class="faq-item">
+      <h4>Can I donate?</h4>
+      <p>Absolutely. We'll share donation links closer to the event date.</p>
+    </div>
+  </section>
+
+  <section class="social">
+    <h2>Follow Us</h2>
+    <a href="#" aria-label="Instagram">📸</a>
+    <a href="#" aria-label="Twitter">🌦️</a>
+    <a href="#" aria-label="YouTube">📻</a>
+    <a href="#" aria-label="TikTok">🎵</a>
+  </section>
+
+  <footer>
+    <div class="players">
+      <h3>Featuring Football Legends</h3>
+      <img src="https://www.kerkida.net/sites/default/files/styles/media_image/public/2025-03/w22-92957w2891146w01195352gfddfgdfgdgsdfgsdfgd.jfif_.jpeg?h=91594c37&itok=aixJ-F0j" alt="Player 1">
+      <img src="https://www.kerkida.net/sites/default/files/styles/media_image/public/2025-03/erlhaandddlpoznan_132036.jpg?h=c601c546&itok=127nU02Y" alt="Player 2">
+      <img src="https://www.kerkida.net/sites/default/files/styles/media_image/public/2025-03/Gmbw9uEbcAAasQ2%5B1%5D.jpg?h=23fe00d9&itok=fRbbPDx3" alt="Player 3">
+    </div>
+    <p>&copy; 2025 Charity Football Match. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
